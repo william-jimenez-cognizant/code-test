@@ -2,10 +2,6 @@ package org.code.service;
 
 import org.code.model.Auction;
 import org.code.model.Bidder;
-import org.code.service.AuctionService;
-import org.code.service.BidService;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -35,8 +31,10 @@ public class AuctionServiceImpl implements AuctionService {
                 auction.setClosed(true);
             }
         }
-        System.out.println("The Winner of the auction is " + bidders.get(0).getName());
-        System.out.println("The Winner bid is " + bidders.get(0).getCurrentBid());
+        System.out.println("The result of the auction is: ");
+        System.out.println("The auction name is: " + auction.getName());
+        System.out.println("The winner name is: " + bidders.get(0).getName());
+        System.out.println("The Winner bid is: " + bidders.get(0).getCurrentBid());
 
     }
 

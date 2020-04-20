@@ -1,0 +1,34 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# Committer: Jimenez Hernandez <860113@cognizant.com>
+#
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#	new file:   .gitignore
+#	new file:   .mvn/wrapper/MavenWrapperDownloader.java
+#	new file:   .mvn/wrapper/maven-wrapper.jar
+#	new file:   .mvn/wrapper/maven-wrapper.properties
+#	new file:   app-info.log
+#	new file:   mvnw
+#	new file:   mvnw.cmd
+#	new file:   pom.xml
+#	new file:   src/main/java/org/code/main/TestApplication.java
+#	new file:   src/main/java/org/code/model/Auction.java
+#	new file:   src/main/java/org/code/model/Bidder.java
+#	new file:   src/main/java/org/code/service/AuctionService.java
+#	new file:   src/main/java/org/code/service/AuctionServiceImpl.java
+#	new file:   src/main/java/org/code/service/BidService.java
+#	new file:   src/main/java/org/code/service/BidServiceImpl.java
+#	new file:   src/main/resources/application.properties
+#	new file:   src/main/resources/log4j2.xml
+#	new file:   src/test/java/org/code/main/TestApplicationTests.java
+#	new file:   src/test/java/org/code/service/AuctionServiceTest.java
+#	new file:   src/test/resources/PianoTestCase.csv
+#	new file:   src/test/resources/RecordPlayerTestCase.csv
+#	new file:   src/test/resources/SnowShoesTestCase.csv
+#

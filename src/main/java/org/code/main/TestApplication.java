@@ -3,7 +3,6 @@ package org.code.main;
 import org.code.model.Auction;
 import org.code.model.Bidder;
 import org.code.service.AuctionService;
-import org.code.service.BidService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
@@ -30,7 +29,7 @@ public class TestApplication implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        System.out.println("Welcome to the Auction app, please register all the bidders");
+        /*System.out.println("Welcome to the Auction app, please register all the bidders");
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please Introduce the name of the auction");
 		Auction auction = new Auction(scanner.nextLine());
@@ -42,8 +41,12 @@ public class TestApplication implements ApplicationRunner {
             System.out.println("Do yo need to register another bidder? Y/N");
             moreBidders = scanner.nextLine().toUpperCase().equals("Y");
         }
-        auctionService.startAuction(bidderList,auction);
-        System.out.println();
+        auctionService.startAuction(bidderList,auction);*/
+        List<Bidder> bidderList = new ArrayList<Bidder>();
+        bidderList.add(new Bidder("Bidder1", 5, 100, 5));
+        bidderList.add(new Bidder("Bidder2", 8, 100, 2));
+        bidderList.add(new Bidder("Bidder3", 20, 80, 10));
+        auctionService.startAuction(bidderList, new Auction("Auction1"));
     }
 
     private Bidder registerBidder() {
